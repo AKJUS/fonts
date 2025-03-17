@@ -1,6 +1,406 @@
 {
-    "last_run": "2025-03-10",
+    "last_run": "2025-03-17",
     "commits": [
+        {
+            "date": "2025-03-14T14:38:49",
+            "title": "Merge pull request #9213 from google/tag-score",
+            "author": "Marc Foley",
+            "status": "new",
+            "kind": "infrastructure",
+            "id": "b37bc6885473c00382fc270e5698badebdb3d80b"
+        },
+        {
+            "date": "2025-03-14T14:28:29",
+            "title": "tags.html: fix tag score",
+            "author": "Marc Foley",
+            "status": "modified",
+            "kind": "infrastructure",
+            "id": "0a7dbe48665aae3ffd79f378472aa333ae6abc10"
+        },
+        {
+            "date": "2025-03-14T14:16:48",
+            "title": "Merge pull request #9211 from google/PPS-i18n-tags",
+            "author": "Marc Foley",
+            "status": "modified",
+            "kind": "infrastructure",
+            "id": "69e16ae1ddf3a38647e1578ad9b6326426a120de"
+        },
+        {
+            "date": "2025-03-14T09:20:08",
+            "title": "Merge pull request #9209 from google/PPS-LGC-article",
+            "author": "Marc Foley",
+            "status": "modified",
+            "kind": "infrastructure",
+            "id": "42890c5d6c70ac7f43d0ec0896a2d7eef00faab5"
+        },
+        {
+            "date": "2025-03-13T23:42:17",
+            "title": "PPS i18n families tags added",
+            "author": "Viviana Monsalve",
+            "status": "modified",
+            "kind": "infrastructure",
+            "id": "a90e10ce7c6fd7525a578360c40bee09cdbb607e"
+        },
+        {
+            "date": "2025-03-13T22:25:36",
+            "title": "PPS article update witg LGC added",
+            "author": "Viviana Monsalve",
+            "status": "modified",
+            "kind": "infrastructure",
+            "id": "14c9c349016720dc74b4963ec8b35bfe45b04d10"
+        },
+        {
+            "date": "2025-03-13T19:48:23",
+            "title": "Merge pull request #9192 from google/tolists_1203",
+            "author": "Nathan Williams",
+            "status": "new",
+            "kind": "infrastructure",
+            "id": "420f0d44b3b9c703938b4dca27cbabc1aaabbb1f"
+        },
+        {
+            "date": "2025-03-13T19:34:27",
+            "title": "Fix CI errors",
+            "author": "nathan-williams",
+            "status": "modified",
+            "kind": "family",
+            "id": "e6ba5ae78bc37f8b030d060a6cb32449c76c0e8e"
+        },
+        {
+            "date": "2025-03-13T16:56:54",
+            "title": "Merge pull request #9205 from google/nathan-williams-patch-1",
+            "author": "Nathan Williams",
+            "status": "new",
+            "kind": "infrastructure",
+            "id": "51f1a8fceb16374d2a08d2d05962ac020dc0667d"
+        },
+        {
+            "date": "2025-03-13T16:55:23",
+            "title": "Remove completed items from to_sandbox.txt.",
+            "author": "Nathan Williams",
+            "status": "modified",
+            "kind": "infrastructure",
+            "id": "08dcf224cf7256d443ecb17c2057158f1fddb133"
+        },
+        {
+            "date": "2025-03-13T16:53:42",
+            "title": "Merge pull request #9204 from google/nathan-williams-patch-1",
+            "author": "Nathan Williams",
+            "status": "new",
+            "kind": "infrastructure",
+            "id": "cca45b36f1170e084c137c94373239dc26633c6a"
+        },
+        {
+            "date": "2025-03-13T16:53:28",
+            "title": "Update to_production.txt",
+            "author": "Nathan Williams",
+            "status": "modified",
+            "kind": "infrastructure",
+            "id": "5a6fa4e80df251cdc30caa3162de370424e24f0b"
+        },
+        {
+            "date": "2025-03-13T16:06:17",
+            "title": "Merge pull request #9157 from google/gftools_packager_ofl_playpensans",
+            "author": "Emma Marichal",
+            "status": "modified",
+            "kind": "family",
+            "id": "e7a831f7a94491f46e7da5204900422f58e3a67a"
+        },
+        {
+            "date": "2025-03-13T14:41:59",
+            "title": "Merge pull request #9191 from google/gftools_packager_ofl_roboto",
+            "author": "Emma Marichal",
+            "status": "modified",
+            "kind": "family",
+            "id": "775cf1ca50ab35115dac06ef4f7e65703d141649"
+        },
+        {
+            "date": "2025-03-13T11:17:30",
+            "title": "Merge pull request #9103 from google/gftools_packager_ofl_winkyrough",
+            "author": "Marc Foley",
+            "status": "new",
+            "kind": "family",
+            "id": "02862c6483c2023134efd9ef77e1cba830a406f9"
+        },
+        {
+            "date": "2025-03-13T11:16:13",
+            "title": "Merge pull request #9201 from google/benhoepner",
+            "author": "Marc Foley",
+            "status": "new",
+            "kind": "infrastructure",
+            "id": "23cb80406030c067596ba2210f7f15d37b96f10d"
+        },
+        {
+            "date": "2025-03-13T10:47:41",
+            "title": "Add Ben Hoepner",
+            "author": "Emma Marichal",
+            "status": "modified",
+            "kind": "family",
+            "id": "60b24a7c5e372c6ea3a9223751eb06fa2097b97c"
+        },
+        {
+            "date": "2025-03-13T07:47:21",
+            "title": "Update METADATA.pb",
+            "author": "Emma Marichal",
+            "status": "modified",
+            "kind": "family",
+            "id": "980ecc3ef7368a861abfb636a42f0952cada6720"
+        },
+        {
+            "date": "2025-03-13T07:27:57",
+            "title": "Merge pull request #9197 from google/AzzaAlameddine",
+            "author": "Emma Marichal",
+            "status": "new",
+            "kind": "designer",
+            "id": "db720975602a23515e7731856dbeaf5cdcf0b7f0"
+        },
+        {
+            "date": "2025-03-13T07:27:02",
+            "title": "Merge pull request #9199 from google/SirinGunkloy",
+            "author": "Emma Marichal",
+            "status": "modified",
+            "kind": "family",
+            "id": "c3dfaed8b795623be499af1ac5a255eb4c5414e8"
+        },
+        {
+            "date": "2025-03-12T22:43:26",
+            "title": "Playpen Sans: Version 2.000 added",
+            "author": "Viviana Monsalve",
+            "status": "modified",
+            "kind": "family",
+            "id": "19d2b3eb5a1861a94e2fd90dfcc97e85b43267f8"
+        },
+        {
+            "date": "2025-03-12T22:39:56",
+            "title": "PPS Thai Sirin Gunkloy designer added",
+            "author": "Viviana Monsalve",
+            "status": "modified",
+            "kind": "designer",
+            "id": "27178a8a736b98b226693a418f37aee843b8fe10"
+        },
+        {
+            "date": "2025-03-12T18:45:15",
+            "title": "PPS Arabic Azza Alameddine designer added",
+            "author": "Viviana Monsalve",
+            "status": "new",
+            "kind": "designer",
+            "id": "5e7c4b14a25421294fcedf71edb36daf220669e9"
+        },
+        {
+            "date": "2025-03-12T16:57:27",
+            "title": "Merge pull request #9188 from google/gftools_packager_ofl_playpensansarabic",
+            "author": "Emma Marichal",
+            "status": "modified",
+            "kind": "family",
+            "id": "09c0294f6063eb0d440176e102259f9253fd6f6f"
+        },
+        {
+            "date": "2025-03-12T16:08:35",
+            "title": "Update ARTICLE.en_us.html",
+            "author": "Emma Marichal",
+            "status": "modified",
+            "kind": "family",
+            "id": "ade8b9cb4600f6e27cac5f6d24eb9b4f87472757"
+        },
+        {
+            "date": "2025-03-12T15:49:41",
+            "title": "Update to_production.txt",
+            "author": "Emma Marichal",
+            "status": "modified",
+            "kind": "family",
+            "id": "dcda90f72a06a9f600159b82b0864d76aa19a0a3"
+        },
+        {
+            "date": "2025-03-12T15:47:52",
+            "title": "Merge pull request #9193 from google/PPS-Hebrew-emojis-fix",
+            "author": "Emma Marichal",
+            "status": "new",
+            "kind": "infrastructure",
+            "id": "49f106f3394e4b90bf90a92e95f9157146d3db4b"
+        },
+        {
+            "date": "2025-03-12T15:22:16",
+            "title": "PPS Hebr: autonym class reinstated for emojis",
+            "author": "Viviana Monsalve",
+            "status": "modified",
+            "kind": "family",
+            "id": "194ce7f6f57cd52c553da62fabdbab3b62e17226"
+        },
+        {
+            "date": "2025-03-12T15:01:06",
+            "title": "PPS Arab: article fix2",
+            "author": "Viviana Monsalve",
+            "status": "modified",
+            "kind": "family",
+            "id": "82590231ebf62775b97c7fe5d3cc209ac4ec50d7"
+        },
+        {
+            "date": "2025-03-12T14:58:43",
+            "title": "Merge pull request #9187 from google/gftools_packager_ofl_playpensanshebrew",
+            "author": "Emma Marichal",
+            "status": "modified",
+            "kind": "family",
+            "id": "c096172221ed3cfdcce0a68225c4ffebe387c83d"
+        },
+        {
+            "date": "2025-03-12T14:57:15",
+            "title": "PPS Arab: article fix",
+            "author": "Viviana Monsalve",
+            "status": "modified",
+            "kind": "family",
+            "id": "f952c3997a5fe5569bce3734752ebab89ecf3e56"
+        },
+        {
+            "date": "2025-03-12T14:25:41",
+            "title": "Update ARTICLE.en_us.html",
+            "author": "Emma Marichal",
+            "status": "modified",
+            "kind": "family",
+            "id": "10ae052f6b7d9de0cc057c186d5d4613e74d0042"
+        },
+        {
+            "date": "2025-03-12T13:37:22",
+            "title": "Update to_sandbox.txt",
+            "author": "Emma Marichal",
+            "status": "modified",
+            "kind": "infrastructure",
+            "id": "abfcd0bd0ed36d21a4227dcdba1c4af8577d5ee0"
+        },
+        {
+            "date": "2025-03-12T13:07:56",
+            "title": "lists of the 12th of March",
+            "author": "Emma Marichal",
+            "status": "modified",
+            "kind": "family",
+            "id": "52733bd83792946a7303723c3c7e95da8d6bfce4"
+        },
+        {
+            "date": "2025-03-12T11:36:14",
+            "title": "Roboto: Version 3.011; 2025 added",
+            "author": "Marc Foley",
+            "status": "modified",
+            "kind": "family",
+            "id": "25b171d06b891f6202c3c54a3cfeb333ce8a547e"
+        },
+        {
+            "date": "2025-03-12T11:13:38",
+            "title": "Merge pull request #9190 from google/emmamarichal-patch-1",
+            "author": "Emma Marichal",
+            "status": "new",
+            "kind": "infrastructure",
+            "id": "da6b886125f582bdfdbc6768eb96f6823a1b00e6"
+        },
+        {
+            "date": "2025-03-12T10:59:04",
+            "title": "Update METADATA.pb - Author spelling",
+            "author": "Emma Marichal",
+            "status": "modified",
+            "kind": "infrastructure",
+            "id": "daea48b77f5e24607d07f56b0391688691f80dba"
+        },
+        {
+            "date": "2025-03-12T10:04:00",
+            "title": "Merge pull request #9189 from google/tag-improvements2",
+            "author": "Marc Foley",
+            "status": "new",
+            "kind": "infrastructure",
+            "id": "45afefd2a2209a7051a82328dbc4ea0c947fa0ab"
+        },
+        {
+            "date": "2025-03-12T09:53:17",
+            "title": "tags.html: save and load a previous session",
+            "author": "Marc Foley",
+            "status": "modified",
+            "kind": "family",
+            "id": "461c9b9b3867b5bcf5b925cb9a495c09bd9d8f79"
+        },
+        {
+            "date": "2025-03-12T03:56:46",
+            "title": "PPS Hebrew OFL url license updated",
+            "author": "Viviana Monsalve",
+            "status": "modified",
+            "kind": "family",
+            "id": "89ec5f9f7bfc6a04caff6d1c80374d1fa5837bd1"
+        },
+        {
+            "date": "2025-03-12T02:35:01",
+            "title": "PPS Arab OFL url license updated",
+            "author": "Viviana Monsalve",
+            "status": "modified",
+            "kind": "infrastructure",
+            "id": "9245e6ebd84566f6accc4f48da1520d5da143186"
+        },
+        {
+            "date": "2025-03-12T02:29:15",
+            "title": "PPS Arab: article added",
+            "author": "Viviana Monsalve",
+            "status": "modified",
+            "kind": "infrastructure",
+            "id": "e995f484b0ec2ad7359ca7bafaaca715f9d496ee"
+        },
+        {
+            "date": "2025-03-12T02:27:15",
+            "title": "PPS Arab: Arabic subset added",
+            "author": "Viviana Monsalve",
+            "status": "modified",
+            "kind": "infrastructure",
+            "id": "0fa346941261d44cb35c44fff1b4edd3a6ce934d"
+        },
+        {
+            "date": "2025-03-12T02:21:43",
+            "title": "Playpen Sans Arabic: Version 2.000 added",
+            "author": "Viviana Monsalve",
+            "status": "modified",
+            "kind": "family",
+            "id": "301c6e7677751f09c19bbd830738e8701c2e4c13"
+        },
+        {
+            "date": "2025-03-12T02:03:44",
+            "title": "PPS Hebr article added",
+            "author": "Viviana Monsalve",
+            "status": "modified",
+            "kind": "infrastructure",
+            "id": "8ad33d17ea5928fba20fb5915c1060d39c4c6ca3"
+        },
+        {
+            "date": "2025-03-12T01:54:22",
+            "title": "PPS Hebr: emoji and math subsets added",
+            "author": "Viviana Monsalve",
+            "status": "modified",
+            "kind": "infrastructure",
+            "id": "99a7fa6f88d9a27b0cb7e21fd37c383a26356d95"
+        },
+        {
+            "date": "2025-03-12T01:51:14",
+            "title": "Playpen Sans Hebrew: Version 2.000 added",
+            "author": "Viviana Monsalve",
+            "status": "modified",
+            "kind": "family",
+            "id": "6b394697d8b8ee02bc1fb21804c51f42e23883e4"
+        },
+        {
+            "date": "2025-03-11T10:04:05",
+            "title": "tags: reverse sort tags",
+            "author": "Marc Foley",
+            "status": "modified",
+            "kind": "infrastructure",
+            "id": "fb5ab43434a4ac33a93feb416790e584542e12d7"
+        },
+        {
+            "date": "2025-03-10T23:32:31",
+            "title": "Merge pull request #9182 from google/remove-deleted-languages",
+            "author": "Nathan Williams",
+            "status": "new",
+            "kind": "infrastructure",
+            "id": "fc0f4fdbc61cc9d2d95ec82e42ca4046f7626e18"
+        },
+        {
+            "date": "2025-03-10T23:30:25",
+            "title": "Remove deleted languages from handwritten language support lists",
+            "author": "nathan-williams",
+            "status": "modified",
+            "kind": "family",
+            "id": "2003d6d4f8e8abb89d9f92b455b86c1b08b4e5f0"
+        },
         {
             "date": "2025-03-07T18:24:15",
             "title": "Remove completed items from to_sandbox.txt.",
@@ -149,9 +549,25 @@
             "date": "2025-03-06T17:10:05",
             "title": "Special Gothic Condensed One: Version 1.010; ttfautohint (v1.8.4.7-5d5b) added",
             "author": "Emma Marichal",
-            "status": "new",
+            "status": "modified",
             "kind": "family",
             "id": "7e1c7773d2f9abe69fa056123dd9b834ef96b6bb"
+        },
+        {
+            "date": "2025-03-06T14:24:22",
+            "title": "article",
+            "author": "Emma Marichal",
+            "status": "modified",
+            "kind": "infrastructure",
+            "id": "dbe1ff9d304f899c1784ab819f23a43006e5bc45"
+        },
+        {
+            "date": "2025-03-06T14:23:15",
+            "title": "Winky Rough: Version 1.206 added",
+            "author": "Emma Marichal",
+            "status": "new",
+            "kind": "family",
+            "id": "a10125bedec8d40272412fa37aa32f6ae1064b0a"
         },
         {
             "date": "2025-03-06T10:08:21",
@@ -80709,19 +81125,247 @@
     "pushes": {
         "sandbox": [
             {
+                "path": "ofl/specialgothiccondensedone",
+                "category": "New",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9165"
+            },
+            {
+                "path": "ofl/specialgothicexpandedone",
+                "category": "New",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9171"
+            },
+            {
+                "path": "ofl/42dotsans",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9045"
+            },
+            {
+                "path": "catalog/designers/jeffdavis",
+                "category": "Designer profile",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9074"
+            },
+            {
+                "path": "catalog/designers/seunbadejo",
+                "category": "Designer profile",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9126"
+            },
+            {
+                "path": "lang/languages/agq_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/apd_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/bap_Krai.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/8509"
+            },
+            {
+                "path": "lang/languages/bax_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/buc_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/cu_Cyrl.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/djc_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/dv_Diak.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/dzg_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/ema_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/en_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/gby_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/gvl_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/lom_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/mg_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/nl_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/nmn_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/shu_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/snk_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/tda_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/ttq_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/tum_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/wdt_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/languages/yo_Latn.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            },
+            {
+                "path": "lang/scripts/Diak.textproto",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9054"
+            }
+        ],
+        "production": [
+            {
+                "path": "ofl/boldonse",
+                "category": "New",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9092"
+            },
+            {
+                "path": "ofl/bytesized",
+                "category": "New",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9077"
+            },
+            {
+                "path": "ofl/gidole",
+                "category": "New",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9122"
+            },
+            {
+                "path": "ofl/winkysans",
+                "category": "New",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9102"
+            },
+            {
                 "path": "ofl/cactusclassicalserif",
                 "category": "Upgrade",
                 "status": null,
                 "url": "https://github.com/google/fonts/pull/8700"
             },
             {
+                "path": "ofl/chocolateclassicalsans",
+                "category": "Upgrade",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/8699"
+            },
+            {
+                "path": "ofl/nanummyeongjo",
+                "category": "Upgrade",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9136"
+            },
+            {
                 "path": "ofl/notosansthailooped",
                 "category": "Upgrade",
                 "status": null,
                 "url": "https://github.com/google/fonts/pull/9090"
-            }
-        ],
-        "production": [
+            },
+            {
+                "path": "ofl/playwritebewal",
+                "category": "Upgrade",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9050"
+            },
+            {
+                "path": "ofl/readexpro",
+                "category": "Upgrade",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9076"
+            },
             {
                 "path": "catalog/designers/42dot",
                 "category": "Designer profile",
@@ -80729,16 +81373,40 @@
                 "url": "https://github.com/google/fonts/pull/9046"
             },
             {
-                "path": "catalog/designers/42dot/42dot.jpg",
+                "path": "catalog/designers/andreaslarsen",
                 "category": "Designer profile",
                 "status": null,
-                "url": "https://github.com/google/fonts/pull/9046"
+                "url": "https://github.com/google/fonts/pull/9123"
+            },
+            {
+                "path": "catalog/designers/lettersfromsweden",
+                "category": "Designer profile",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/8812"
+            },
+            {
+                "path": "catalog/designers/typofactur",
+                "category": "Designer profile",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9105"
+            },
+            {
+                "path": "catalog/designers/universitype",
+                "category": "Designer profile",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9096"
             },
             {
                 "path": "catalog/designers/gustavoibarra",
                 "category": "Designer profile",
                 "status": null,
                 "url": "https://github.com/google/fonts/pull/7547"
+            },
+            {
+                "path": "ofl/afacad",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
             },
             {
                 "path": "ofl/akayatelivigala",
@@ -80757,6 +81425,12 @@
                 "category": "Metadata / Description / License",
                 "status": null,
                 "url": "https://github.com/google/fonts/pull/8083"
+            },
+            {
+                "path": "ofl/andika",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
             },
             {
                 "path": "ofl/anekbangla",
@@ -80801,6 +81475,78 @@
                 "url": "https://github.com/google/fonts/pull/8083"
             },
             {
+                "path": "ofl/climatecrisis",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
+            },
+            {
+                "path": "ofl/danfo",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
+            },
+            {
+                "path": "ofl/doto",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
+            },
+            {
+                "path": "ofl/gamaamli",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
+            },
+            {
+                "path": "ofl/lexend",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
+            },
+            {
+                "path": "ofl/lexenddeca",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
+            },
+            {
+                "path": "ofl/lexendexa",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
+            },
+            {
+                "path": "ofl/lexendgiga",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
+            },
+            {
+                "path": "ofl/lexendmega",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
+            },
+            {
+                "path": "ofl/lexendpeta",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
+            },
+            {
+                "path": "ofl/lexendtera",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
+            },
+            {
+                "path": "ofl/lexendzetta",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
+            },
+            {
                 "path": "ofl/lohitbengali",
                 "category": "Metadata / Description / License",
                 "status": null,
@@ -80825,10 +81571,22 @@
                 "url": "https://github.com/google/fonts/pull/8091"
             },
             {
+                "path": "ofl/matemasie",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
+            },
+            {
                 "path": "ofl/metal",
                 "category": "Metadata / Description / License",
                 "status": null,
                 "url": "https://github.com/google/fonts/pull/8091"
+            },
+            {
+                "path": "ofl/mingzat",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
             },
             {
                 "path": "ofl/mirza",
@@ -80859,6 +81617,18 @@
                 "category": "Metadata / Description / License",
                 "status": null,
                 "url": "https://github.com/google/fonts/pull/8091"
+            },
+            {
+                "path": "ofl/ojuju",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
+            },
+            {
+                "path": "ofl/onest",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
             },
             {
                 "path": "ofl/poppins",
@@ -80919,6 +81689,42 @@
                 "category": "Metadata / Description / License",
                 "status": null,
                 "url": "https://github.com/google/fonts/pull/8098"
+            },
+            {
+                "path": "ofl/tacone",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
+            },
+            {
+                "path": "ofl/taiheritagepro",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
+            },
+            {
+                "path": "ofl/tiltneon",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
+            },
+            {
+                "path": "ofl/tiltprism",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
+            },
+            {
+                "path": "ofl/tiltwarp",
+                "category": "Metadata / Description / License",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9114"
+            },
+            {
+                "path": "ofl/notoserifhentaigana",
+                "category": "Sample texts",
+                "status": null,
+                "url": "https://github.com/google/fonts/pull/9152"
             }
         ]
     }
