@@ -26,6 +26,7 @@ axes {
 source {
   repository_url: "https://github.com/TypeTogether/Playpen-Sans"
   commit: "6990b3115c68779625bad656c6b0723db7435044"
+  config_yaml: "sources/config-Arabic.yaml"
   files {
     source_file: "OFL.txt"
     dest_file: "OFL.txt"
