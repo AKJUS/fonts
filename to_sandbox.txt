@@ -1,39 +1,31 @@
 # New
-ofl/specialgothiccondensedone # https://github.com/google/fonts/pull/9165
-ofl/specialgothicexpandedone # https://github.com/google/fonts/pull/9171
-
-# Metadata / Description / License
-ofl/42dotsans # https://github.com/google/fonts/pull/9045
-
-# Upgrade
+ofl/ancizarsans # https://github.com/google/fonts/pull/9350
+ofl/ancizarserif # https://github.com/google/fonts/pull/9355
+ofl/huninn # https://github.com/google/fonts/pull/9228
 
 # Designer profile
-catalog/designers/jeffdavis # https://github.com/google/fonts/pull/9074
-catalog/designers/seunbadejo # https://github.com/google/fonts/pull/9126
+catalog/designers/alemetadesse # https://github.com/google/fonts/pull/9140
+catalog/designers/cesarpuertas # https://github.com/google/fonts/pull/9307
+catalog/designers/columntype # https://github.com/google/fonts/pull/9140
+catalog/designers/julianmoncada # https://github.com/google/fonts/pull/9307
+catalog/designers/raphaelalegbeleye # https://github.com/google/fonts/pull/9140
+catalog/designers/unal # https://github.com/google/fonts/pull/9307
+catalog/designers/vivianamonsalve # https://github.com/google/fonts/pull/9307
+catalog/designers/yikunoamlakayalew # https://github.com/google/fonts/pull/9140
 
-# Sample texts
-lang/languages/agq_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/apd_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/bap_Krai.textproto # https://github.com/google/fonts/pull/8509
-lang/languages/bax_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/buc_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/cu_Cyrl.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/djc_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/dv_Diak.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/dzg_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/ema_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/en_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/gby_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/gvl_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/lom_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/mg_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/nl_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/nmn_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/shu_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/snk_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/tda_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/ttq_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/tum_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/wdt_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/languages/yo_Latn.textproto # https://github.com/google/fonts/pull/9054
-lang/scripts/Diak.textproto # https://github.com/google/fonts/pull/9054
+# Metadata / Description / License
+ofl/cactusclassicalserif # https://github.com/google/fonts/pull/9298
+ofl/chocolateclassicalsans # https://github.com/google/fonts/pull/9298
+ofl/lxgwwenkaimonotc # https://github.com/google/fonts/pull/9298
+ofl/lxgwwenkaitc # https://github.com/google/fonts/pull/9298
+ofl/playpensans # https://github.com/google/fonts/pull/9262
+ofl/playpensansarabic # https://github.com/google/fonts/pull/9262
+ofl/playpensanshebrew # https://github.com/google/fonts/pull/9262
+ofl/playpensansthai # https://github.com/google/fonts/pull/9262
+
+# Other
+ofl/kumaroneoutline # https://github.com/google/fonts/pull/9332
+ofl/mplusrounded1c # https://github.com/google/fonts/pull/9332
+ofl/notoznamennymusicalnotation # https://github.com/google/fonts/pull/9337
+ofl/sawarabigothic # https://github.com/google/fonts/pull/9332
+ofl/winkyrough # https://github.com/google/fonts/pull/9340
