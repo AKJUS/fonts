@@ -10,17 +10,18 @@ fonts {
   filename: "Iansui-Regular.ttf"
   post_script_name: "Iansui-Regular"
   full_name: "Iansui Regular"
-  copyright: "Copyright 2022 The Iansui Project Authors (https://github.com/ButTaiwan/iansui)."
+  copyright: "Copyright 2025 The Iansui Project Authors (https://github.com/ButTaiwan/iansui)"
 }
-subsets: "chinese-hongkong"
+subsets: "chinese-traditional"
 subsets: "latin"
 subsets: "latin-ext"
 subsets: "menu"
 subsets: "symbols2"
-primary_script: "Hant"
-primary_language: "yue_Hant"
-
 source {
   repository_url: "https://github.com/ButTaiwan/iansui"
-  commit: "41190e8094a9a5b47626c5d927daf0dcb226babf"
+  commit: "a66e7fe5bc492b358d8dc916f359157133a1d23c"
+  config_yaml: "sources/config.yaml"
 }
+primary_script: "Hant"
+primary_language: "yue_Hant"
+display_name: "Iansui 芫荽"
