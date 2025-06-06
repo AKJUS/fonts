@@ -6,6 +6,12 @@
 <link href="https://fonts.google.com/metadata/fonts" type="application/json" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
+<style>
+  .tagEdited {
+    border-left: 5px solid red;
+  }
+</style>
+
 <body>
   <div id="app">
     <div id="fonts">
@@ -57,7 +63,7 @@
           </li>
           <li>
               <div class="join" style="padding-top: 10px;">
-                  <input class="join-item input input-sm input-bordered w-full max-w-xs" v-model="tagFilter" placeholder="Search Fonts">
+                  <input class="join-item input input-sm input-bordered w-full max-w-xs" v-model.lazy="tagFilter" placeholder="Search Fonts">
               </div>
           </li>
           <li>
@@ -103,6 +109,7 @@
               <option v-for="family in uniqueFamilies" :value="family.name">
             </datalist>
             <input type="number" max="100" min="0" class="join-item input input-xs input-bordered btn-square" v-model="newWeight" required placeholder="Score">
+            <input type="number" min="2" default="2" max="100" class="join-item input input-xs input-bordered btn-square" v-model="axisPositionCount" required placeholder="Axis Position Count">
             <button @click="addAxis" class="join-item btn btn-xs">Add Axis</button>
             <button @click="AddFamily" class="join-item btn btn-xs">Add</button>
           </div>
@@ -250,24 +257,26 @@ function axesCombos(axes) {
   Vue.component('family-item', {
     props: ['family', 'ready', 'index', 'category'],
     template: `
-      <div class="item p-1">
+      <div class="p-2" :class="{ tagEdited: family.isEdited }" style="border-bottom: 1px solid #e5e7eb;">
         <div class="join">
           <b v-if="category == ' All'" class="pr-2">{{ familyTag }}</b>
           <b v-else class="pr-2">{{ familyDisplayName }}</b>
           <input style="width: 3rem;" class="join-item input input-xs input-bordered btn-square" :data-index="index" v-model.lazy="family.score" @change="edited" placeholder="family.score">
           <button class="btn btn-xs join-item pr-2" @click="removeFamily">X</button>
           </div>
-          <div v-if="ready" :style="familyStyle" contenteditable="true">
-            {{ familyPangram }}
-          </div>
+          <div style="white-space: pre-wrap;" v-if="ready" :style="familyStyle" contenteditable="true" @input="customSampleText">{{ familyPangram }}</div>
         <div v-else>
           Loading...
         </div>
-        <div class="divider"></div>
       </div>
     `,
     methods: {
+      customSampleText(event) {
+        this.$root.sampleText = event.target.innerText;
+        console.log(this.$root.sampleText);
+      },
       edited() {
+        this.family.isEdited = true;
         this.$emit('edited', this.family);
       },
       removeFamily() {
@@ -276,13 +285,16 @@ function axesCombos(axes) {
     },
     computed: {
       familyPangram() {
+        if (this.$root.sampleText !== "") {
+          return this.$root.sampleText
+        }
         return this.$root.familyPangram(this.family);
       },
       familyStyle() {
         return this.family.toStyle();
       },
       familyDisplayName() {
-        return this.family.displayName;
+        return `${this.family.displayName}`;
       },
       familyTag() {
         return this.family.tag
@@ -303,6 +315,7 @@ function axesCombos(axes) {
         newTag: "",
         newFamily: '',
         newWeight: '',
+        axisPositionCount: 2,
         newAxes: [],
         fromFamily: "",
         toFamily: "",
@@ -329,6 +342,7 @@ function axesCombos(axes) {
           ["Phags Pa", "ꡗ ꡈꡱ ᠂ ꡒ ꡂ ꡈꡞ ᠂ ꡚꡖꡋ ꡈꡞꡋꡨꡖ ꡗꡛꡧꡖ ꡈꡋ ꡈꡱꡨꡖ ꡳꡬꡖ"],
           ["Tamil", "மனிதக் குடும்பத்தினைச் சேர்ந்த யாவரதும் உள்ளார்ந்த"],
         ]),
+        sampleText: "",
         familyScripts: new Map(),
         history: [],
       };
@@ -369,21 +383,39 @@ function axesCombos(axes) {
           sortFunc = function(a, b) {return a.displayName.localeCompare(b.displayName)}
         } else if (["Popularity", "Trending"].includes(this.sortMethod)) {
           sortFunc = function(a, b) {
-            const aFamilyData = _this.familyData[b.displayName]
-            const bFamilyData = _this.familyData[a.displayName]
-            if (aFamilyData === undefined || bFamilyData === undefined) {
-              return 1;
+            let aVal, bVal;
+            const aFamilyData = _this.familyData[a.displayName]
+            const bFamilyData = _this.familyData[b.displayName]
+            if (aFamilyData === undefined) {
+             aVal = Number.MAX_SAFE_INTEGER; 
+            } else {
+              aVal = aFamilyData[_this.sortMethod.toLowerCase()];
             }
-            return bFamilyData[_this.sortMethod.toLowerCase()] - aFamilyData[_this.sortMethod.toLowerCase()];
+            if (bFamilyData === undefined) {
+              bVal = Number.MAX_SAFE_INTEGER;
+            } else {
+              bVal = bFamilyData[_this.sortMethod.toLowerCase()];
+            }
+            
+            if (aVal < bVal) {
+              return -1;
+            } else if (aVal > bVal) {
+              return 1;
+            } else {
+              return 0;
+            }
           }
         }
         let filtered = this.tags;
         if (this.currentCategory !== " All") {
           filtered = filtered.filter(family => family.category === this.currentCategory);
         }
-        filtered = filtered.filter(family => family.tag.match(this.tagFilter));
+        if (this.tagFilter !== "") {
+          filtered = filtered.filter(family => family.tag.match(this.tagFilter));
+        }
         filtered.sort(sortFunc);
 
+        
         if (this.reverseTags) {
           filtered.reverse();
         }
@@ -425,12 +457,25 @@ function axesCombos(axes) {
           let results = [];
           for (k in this.familyData) {
             const family = this.familyData[k];
-            // to do bullshit aplhabetical sorting
             let path = `https://fonts.googleapis.com/css2?family=${family.family.replaceAll(" ", "+")}`
+            // GF api wants the axes in sorted alphabetical order. However, axes with
+            // caps are last
+            const sortedUpperCaseAxes = []
+            const sortedLowerCaseAxes = []
+            for (let a of family.axes) {
+              if (a.tag.toUpperCase() === a.tag) {
+                sortedUpperCaseAxes.push(a);
+              } else {
+                sortedLowerCaseAxes.push(a);
+              }
+            }
+            sortedLowerCaseAxes.sort((a, b) => a.tag.localeCompare(b.tag));
+            sortedUpperCaseAxes.sort((a, b) => a.tag.localeCompare(b.tag));
+            const sortedAxes = [...sortedLowerCaseAxes, ...sortedUpperCaseAxes]
             if (family.axes.length > 0) {
-              path += ":" + family.axes.map(a => {return a.tag}).join(",")
+              path += ":" + sortedAxes.map(a => {return a.tag}).join(",")
               path += "@";
-              path += family.axes.map(a => {return `${Number(a.min)}..${Number(a.max)}`}).join(",")
+              path += sortedAxes.map(axis => {return `${Number(axis.min)}..${Number(axis.max)}`}).join(",")
             }
             results.push(path);
           }
@@ -438,15 +483,14 @@ function axesCombos(axes) {
           return results
       },
       addAxis() {
-        this.newAxes.push(
-          {
-            tag: "",
-            positions: [
-              {coordinate: "", score: 0},
-              {coordinate: "", score: 0},
-            ]
-          }
-        )
+        let axis = {
+          tag: "",
+          positions: []
+        }
+        for (let i = 0; i < this.axisPositionCount; i++) {
+          axis.positions.push({coordinate: "", score: 0});
+        }
+        this.newAxes.push(axis);
       },
       removeAxis(idx) {
         this.newAxes.splice(idx, 1);
@@ -571,6 +615,7 @@ function axesCombos(axes) {
           this.seen.add(tagKey);
           this.tags.push(newFamily);
           this.history.push(`+ ${newFamily.displayName},${newFamily.category},${newFamily.score}`);
+          newFamily.isEdited = true;
         }
         this.saveSession();
       },
@@ -596,14 +641,14 @@ function axesCombos(axes) {
         const familiesToAdd = this.uniqueFamilies
         familiesToAdd.forEach((family) => {
           if (!seen.has(family.name)) {
-            this.tags.push(new FontTag(family.name, this.currentCategory, score=""));
+            this.tags.push(new FontTag(family.name, this.currentCategory, score=0));
           }
         });
         this.history.push(`+ Placeholder tags added for ${this.currentCategory}`);
       },
       RemovePlaceHolderTags() {
         this.isEdited = true;
-        this.tags = this.tags.filter((family) => family.score !== "");
+        this.tags = this.tags.filter((family) => family.score !== 0);
         this.history.push(`- Placeholder tags removed for all categories`);
       },
       removeFamily(Family) {
@@ -615,7 +660,7 @@ function axesCombos(axes) {
         this.saveSession();
       },
       tagsToCSV() {
-        this.RemovePlaceHolderTags();
+        //this.RemovePlaceHolderTags();
         this.tags = this.tags.filter((t) => t.name !== "");
         // The sorting function used is case sensitive.
         // This means that "A" will come before "a".
@@ -635,6 +680,7 @@ function axesCombos(axes) {
         return res
       },
       saveCSV() {
+        this.RemovePlaceHolderTags();
         let csv = this.tagsToCSV();
         const blob = new Blob([csv], { type: 'text/csv' });
         const url = URL.createObjectURL(blob);
@@ -647,6 +693,7 @@ function axesCombos(axes) {
         URL.revokeObjectURL(url);
       },
       prCSV() {
+        this.RemovePlaceHolderTags();
         let csv = this.tagsToCSV();
         alert("Tag data copied to clipboard. A github pull request page will open in a new tab. Please remove the old data and paste in the new.");
         navigator.clipboard.writeText(csv);
