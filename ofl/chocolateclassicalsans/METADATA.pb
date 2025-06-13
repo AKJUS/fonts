@@ -12,17 +12,18 @@ fonts {
   full_name: "Chocolate Classical Sans Regular"
   copyright: "Copyright 2024 The Chocolate Classical Sans Project Authors (https://github.com/MoonlitOwen/ChocolateSans)"
 }
-subsets: "chinese-hongkong"
+subsets: "chinese-traditional"
 subsets: "cyrillic"
 subsets: "latin"
 subsets: "latin-ext"
 subsets: "menu"
 subsets: "vietnamese"
 source {
-  repository_url: "https://github.com/aaronbell/ChocolateSans"
-  commit: "ce0c3c542b943f1e56fddc54116f1c18326f5ba1"
+  repository_url: "https://github.com/MoonlitOwen/ChocolateSans"
+  commit: "0446a76d969f9788b0b339a9923f6541699df903"
+  config_yaml: "sources/project.yaml"
   files {
-    source_file: "OFL.txt"
+    source_file: "license.md"
     dest_file: "OFL.txt"
   }
   files {
