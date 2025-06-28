@@ -1,5 +1,5 @@
 name: "National Park"
-designer: "Andrea Herstowski, Ben Hoepner"
+designer: "Andrea Herstowski, Ben Hoepner, Jeremy Shellhorn"
 license: "OFL"
 category: "SANS_SERIF"
 date_added: "2025-03-07"
@@ -33,5 +33,6 @@ source {
     dest_file: "NationalPark[wght].ttf"
   }
   branch: "master"
+  config_yaml: "sources/config.yaml"
 }
 stroke: "SANS_SERIF"

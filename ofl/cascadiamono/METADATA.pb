@@ -1,5 +1,5 @@
 name: "Cascadia Mono"
-designer: "Aaron Bell"
+designer: "Aaron Bell, Mohamad Dakak, Viktoriya Grabowska, Liron Lavi Turkenich"
 license: "OFL"
 category: "SANS_SERIF"
 date_added: "2025-03-18"
@@ -39,4 +39,5 @@ axes {
 }
 source {
   repository_url: "https://github.com/microsoft/cascadia-code"
+  commit: "56bcca3f2c1e4cb19458954f0e2bb4635960df91"
 }
