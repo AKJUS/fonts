@@ -37,7 +37,7 @@ axes {
 }
 source {
   repository_url: "https://github.com/Omnibus-Type/Asap"
-  commit: "927ab390d4ece9eaa70a3b16a6124baa9192e34c"
+  commit: "2de32f20d7a0d48d4084adcf4bd6ac8115cf2f1a"
   files {
     source_file: "OFL.txt"
     dest_file: "OFL.txt"
@@ -51,4 +51,5 @@ source {
     dest_file: "Asap-Italic[wdth,wght].ttf"
   }
   branch: "master"
+  config_yaml: "sources/config.yaml"
 }
